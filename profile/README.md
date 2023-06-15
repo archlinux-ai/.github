@@ -24,4 +24,12 @@ pacman -Sl ai  # List packages in repo.
 pacman -S python-jax python-jaxlib-cuda
 ```
 
+Also, there is a pre-built docker images on top of corresponding base of
+`archlinux:base` and `archlinux:base-devel` images.
+
+```shell
+docker pull ghcr.io/archlinux-ai/base  # small and simple
+docker pull ghcr.io/archlinux-ai/base-devel  # devtools inside
+```
+
 [1]: https://wiki.archlinux.org/title/pacman
